@@ -86,7 +86,6 @@ def create_dataframe(file,chat_format='ios'):
     df['day_name'] = df['Timestamp'].dt.day_name()
     df['hour'] = df['Timestamp'].dt.hour
     df['year'] = df['Timestamp'].dt.year
-    df.to_excel('chat_dataframe.xlsx',index=False)
     # Print the DataFrame
     return df
 
